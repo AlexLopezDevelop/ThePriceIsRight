@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		AC5C08DE21C3A15C00AF6A2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5C08DD21C3A15C00AF6A2C /* AppDelegate.swift */; };
-		AC5C08E021C3A15C00AF6A2C /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5C08DF21C3A15C00AF6A2C /* RootViewController.swift */; };
-		AC5C08E221C3A15C00AF6A2C /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5C08E121C3A15C00AF6A2C /* DataViewController.swift */; };
-		AC5C08E421C3A15C00AF6A2C /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5C08E321C3A15C00AF6A2C /* ModelController.swift */; };
+		AC5C08E021C3A15C00AF6A2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5C08DF21C3A15C00AF6A2C /* ViewController.swift */; };
 		AC5C08E721C3A15C00AF6A2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5C08E521C3A15C00AF6A2C /* Main.storyboard */; };
 		AC5C08E921C3A15E00AF6A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5C08E821C3A15E00AF6A2C /* Assets.xcassets */; };
 		AC5C08EC21C3A15E00AF6A2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5C08EA21C3A15E00AF6A2C /* LaunchScreen.storyboard */; };
+		AC5C08F821C3A6F300AF6A2C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5C08F721C3A6F300AF6A2C /* PageViewController.swift */; };
+		ACE37A0421C6E9560099693B /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE37A0321C6E9560099693B /* House.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC5C08DA21C3A15C00AF6A2C /* ThePriceIsRight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThePriceIsRight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5C08DD21C3A15C00AF6A2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC5C08DF21C3A15C00AF6A2C /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		AC5C08E121C3A15C00AF6A2C /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		AC5C08E321C3A15C00AF6A2C /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		AC5C08DF21C3A15C00AF6A2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC5C08E621C3A15C00AF6A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC5C08E821C3A15E00AF6A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC5C08EB21C3A15E00AF6A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC5C08ED21C3A15E00AF6A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5C08F721C3A6F300AF6A2C /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		ACE37A0321C6E9560099693B /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +58,48 @@
 		AC5C08DC21C3A15C00AF6A2C /* ThePriceIsRight */ = {
 			isa = PBXGroup;
 			children = (
-				AC5C08DD21C3A15C00AF6A2C /* AppDelegate.swift */,
-				AC5C08DF21C3A15C00AF6A2C /* RootViewController.swift */,
-				AC5C08E121C3A15C00AF6A2C /* DataViewController.swift */,
-				AC5C08E321C3A15C00AF6A2C /* ModelController.swift */,
-				AC5C08E521C3A15C00AF6A2C /* Main.storyboard */,
-				AC5C08E821C3A15E00AF6A2C /* Assets.xcassets */,
-				AC5C08EA21C3A15E00AF6A2C /* LaunchScreen.storyboard */,
-				AC5C08ED21C3A15E00AF6A2C /* Info.plist */,
+				AC5C08F521C3A19700AF6A2C /* Controllers */,
+				AC5C08F421C3A19200AF6A2C /* View */,
+				AC5C08F321C3A18800AF6A2C /* Model */,
+				AC5C08F621C3A1A100AF6A2C /* Supporting Files */,
 			);
 			path = ThePriceIsRight;
+			sourceTree = "<group>";
+		};
+		AC5C08F321C3A18800AF6A2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACE37A0321C6E9560099693B /* House.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC5C08F421C3A19200AF6A2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC5C08E521C3A15C00AF6A2C /* Main.storyboard */,
+				AC5C08EA21C3A15E00AF6A2C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC5C08F521C3A19700AF6A2C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC5C08DD21C3A15C00AF6A2C /* AppDelegate.swift */,
+				AC5C08DF21C3A15C00AF6A2C /* ViewController.swift */,
+				AC5C08F721C3A6F300AF6A2C /* PageViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AC5C08F621C3A1A100AF6A2C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC5C08E821C3A15E00AF6A2C /* Assets.xcassets */,
+				AC5C08ED21C3A15E00AF6A2C /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC5C08E021C3A15C00AF6A2C /* RootViewController.swift in Sources */,
-				AC5C08E421C3A15C00AF6A2C /* ModelController.swift in Sources */,
-				AC5C08E221C3A15C00AF6A2C /* DataViewController.swift in Sources */,
+				AC5C08F821C3A6F300AF6A2C /* PageViewController.swift in Sources */,
+				AC5C08E021C3A15C00AF6A2C /* ViewController.swift in Sources */,
+				ACE37A0421C6E9560099693B /* House.swift in Sources */,
 				AC5C08DE21C3A15C00AF6A2C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +324,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LX4P693W2D;
-				INFOPLIST_FILE = ThePriceIsRight/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ThePriceIsRight/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LX4P693W2D;
-				INFOPLIST_FILE = ThePriceIsRight/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ThePriceIsRight/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
